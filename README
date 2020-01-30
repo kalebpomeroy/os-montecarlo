@@ -1,0 +1,35 @@
+
+Example output
+
+```$ python sim.py                                                                                                                                                                                                      [17:25:16]
+P1 draw:9 action:gain_c 	C:1 U:0 R:0  S:-1 H:0 U:0 	gain_c:1 	P:[] T:[9]
+P2 draw:27 action:filter 	C:0 U:1 R:0  S:-1 H:0 U:0 	gain_c:1 filter:1 	P:[27] T:[9]
+P3 draw:63 action:gain_c 	C:1 U:1 R:0  S:-2 H:1 U:0 	gain_c:2 filter:1 	P:[27] T:[9]
+P4 draw:55 action:gain_c 	C:2 U:1 R:0  S:-3 H:3 U:0 	gain_c:3 filter:1 	P:[27] T:[9]
+P1 draw:6 action:project 	C:0 U:0 R:0  S:-4 H:3 U:0 	gain_c:2 project:1 filter:1 	P:[] T:[9, 6]
+P2 draw:65 action:gain_c 	C:1 U:0 R:0  S:-4 H:3 U:0 	gain_c:3 project:1 	P:[] T:[9, 6]
+P3 draw:48 action:threat 	C:1 U:0 R:0  S:-3 H:3 U:0 	gain_c:2 project:1 threat:1 	P:[48] T:[6]
+P4 draw:7 action:gain_c 	C:2 U:0 R:0  S:-3 H:2 U:0 	gain_c:2 project:1 threat:1 	P:[48] T:[6, 7]
+P1 draw:56 action:gain_c 	C:3 U:0 R:0  S:-3 H:1 U:0 	gain_c:3 threat:1 	P:[48] T:[6, 7]
+P2 draw:50 action:project 	C:0 U:0 R:0  S:-3 H:1 U:0 	gain_c:2 project:1 threat:1 	P:[48] T:[6, 7]
+P3 draw:25 action:gain_c 	C:1 U:0 R:0  S:-3 H:1 U:0 	gain_c:3 project:1 	P:[48] T:[6, 7]
+P4 draw:67 action:filter 	C:0 U:2 R:0  S:-3 H:1 U:0 	gain_c:2 project:1 filter:1 	P:[48, 67] T:[6, 7]
+P1 draw:66 action:gain_c 	C:1 U:1 R:0  S:-3 H:1 U:0 	gain_c:2 project:1 filter:1 	P:[48, 67, 66] T:[6, 7]
+P2 draw:49 action:gain_c 	C:2 U:1 R:0  S:-3 H:1 U:0 	gain_c:3 filter:1 	P:[48, 67, 49] T:[6, 7]
+P3 draw:64 action:gain_c 	C:3 U:1 R:0  S:-3 H:1 U:1 	gain_c:3 filter:1 	P:[48, 67, 49] T:[6, 7]
+P4 draw:18 action:gain_c 	C:4 U:1 R:0  S:-3 H:1 U:1 	gain_c:4 	P:[48, 67, 18] T:[6, 7]
+P1 draw:52 action:filter 	C:3 U:3 R:0  S:-3 H:1 U:1 	gain_c:3 filter:1 	P:[48, 67, 52] T:[6, 7]
+P2 draw:37 action:gain_c 	C:4 U:3 R:0  S:-3 H:1 U:1 	gain_c:3 filter:1 	P:[48, 67] T:[6, 7]
+P3 draw:38 action:upgrade 	C:4 U:1 R:0  S:-3 H:0 U:1 	gain_c:2 upgrade:1 filter:1 	P:[48, 67] T:[6, 7, 38]
+P4 draw:57 action:gain_c 	C:6 U:1 R:0  S:-4 H:0 U:3 	gain_c:2 upgrade:1 filter:1 	P:[48, 67] T:[6, 7, 38]
+P1 draw:62 action:project 	C:1 U:2 R:0  S:-4 H:0 U:3 	gain_c:2 upgrade:1 project:1 	P:[67] T:[6, 7]
+P2 draw:30 action:gain_c 	C:3 U:2 R:0  S:-4 H:0 U:2 	gain_c:2 upgrade:1 project:1 	P:[67] T:[6, 7]
+P3 draw:40 action:filter 	C:2 U:5 R:0  S:-4 H:-1 U:2 	gain_c:2 project:1 filter:1 	P:[67] T:[6]
+P4 draw:22 action:gain_c 	C:4 U:6 R:0  S:-4 H:-1 U:1 	gain_c:2 project:1 filter:1 	P:[67] T:[6]
+P1 draw:61 action:gain_c 	C:6 U:7 R:0  S:-4 H:-1 U:1 	gain_c:3 filter:1 	P:[67] T:[6]
+P2 draw:11 action:project 	C:6 U:4 R:1  S:-4 H:-1 U:1 	gain_c:2 project:1 filter:1 	P:[] T:[6, 11]
+P3 draw:36 action:upgrade 	C:6 U:2 R:1  S:-4 H:-1 U:0 	gain_c:2 upgrade:1 project:1 	P:[] T:[6, 11, 36]
+P4 draw:34 action:threat 	C:7 U:1 R:1  S:-5 H:-1 U:0 	gain_c:1 upgrade:1 project:1 threat:1 	P:[] T:[6, 34]
+*****************************************
+*		YOU LOSE		*
+*****************************************```
